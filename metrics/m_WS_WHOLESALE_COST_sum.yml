@@ -1,0 +1,6 @@
+unique_name: m_WS_WHOLESALE_COST_sum
+object_type: metric
+label: Ws Whole Sale Cost - SUM
+calculation_method: sum
+dataset: web_sales
+column: WS_WHOLESALE_COST

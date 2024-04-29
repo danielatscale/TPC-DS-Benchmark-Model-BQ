@@ -1,0 +1,6 @@
+unique_name: m_WS_EXT_DISCOUNT_AMT_sum_2
+object_type: metric
+label: Ws Ext Discount Amount
+calculation_method: sum
+dataset: web_sales
+column: WS_EXT_DISCOUNT_AMT

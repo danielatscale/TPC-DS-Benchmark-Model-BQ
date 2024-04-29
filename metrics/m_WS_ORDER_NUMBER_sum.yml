@@ -1,0 +1,6 @@
+unique_name: m_WS_ORDER_NUMBER_sum
+object_type: metric
+label: Ws Order Number
+calculation_method: sum
+dataset: web_sales
+column: WS_ORDER_NUMBER

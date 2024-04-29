@@ -1,0 +1,6 @@
+unique_name: m_WS_LIST_PRICE_sum_2
+object_type: metric
+label: Ws List Price - DG
+calculation_method: sum
+dataset: web_sales
+column: WS_LIST_PRICE

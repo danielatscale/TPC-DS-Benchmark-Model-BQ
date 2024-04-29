@@ -120,19 +120,23 @@ level_attributes:
 
 calculation_groups:
 
-  - unique_name: Time-Series
-    label: Time-Series
+  - unique_name: Time Series
+    label: Time Series
     folder: Time Series
+    name: Time Series
+    description: Time Series
 
     calculated_members:
 
-      - unique_name: Date Month Hierarchy Month Moving Average 3 Month - DG
+      - unique_name: Date Month Hierarchy Month Moving Average 3 Month
         expression: "Avg(ParallelPeriod([Date Dimension].[Date Dimension].[Calendar\
           \ Month], 2, [Date Dimension].[Date Dimension].CurrentMember):[Date Dimension].[Date\
           \ Dimension].CurrentMember, [Measures].currentMember)"
         format: Standard
         hierarchy: Date Dimension
         template: Month Moving Average 3 Month
+        name: Month Moving Average 3 Month
+        description: Month Moving Average 3 Month
 
       - unique_name: Current
         description: The measure's value for the current dimension members in the
@@ -142,6 +146,18 @@ calculation_groups:
         hierarchy: Date Dimension
         template: Current
         is_default: true
+        name: Current
+
+      - unique_name: Date Month Hierarchy Current vs Last Year
+        expression: "(([Date Dimension].[Date Dimension].CurrentMember, [Measures].currentMember)\
+          \ - (ParallelPeriod([Date Dimension].[Date Dimension].[Calendar Year], 1,\
+          \ [Date Dimension].[Date Dimension].CurrentMember), [Measures].currentMember\
+          \ ))"
+        format: Standard
+        hierarchy: Date Dimension
+        template: Current vs Last Year
+        name: Date Month Hierarchy Current vs Last Year
+        description: Date Month Hierarchy Current vs Last Year
 
       - unique_name: Date Month Hierarchy Current vs Last Year Pct
         expression: "(([Date Dimension].[Date Dimension].CurrentMember, [Measures].currentMember)\
@@ -152,46 +168,5 @@ calculation_groups:
         format: Percent
         hierarchy: Date Dimension
         template: Current vs Last Year Pct
-
-      - unique_name: Date Month Hierarchy Month Moving Average 3 Month
-        expression: "Avg(ParallelPeriod([Date Dimension].[Date Dimension].[Calendar\
-          \ Month], 2, [Date Dimension].[Date Dimension].CurrentMember):[Date Dimension].[Date\
-          \ Dimension].CurrentMember, [Measures].currentMember)"
-        format: Standard
-        hierarchy: Date Dimension
-        template: Month Moving Average 3 Month
-
-      - unique_name: Date Month Hierarchy Current vs Last Year
-        expression: "(([Date Dimension].[Date Dimension].CurrentMember, [Measures].currentMember)\
-          \ - (ParallelPeriod([Date Dimension].[Date Dimension].[Calendar Year], 1,\
-          \ [Date Dimension].[Date Dimension].CurrentMember), [Measures].currentMember\
-          \ ))"
-        format: Standard
-        hierarchy: Date Dimension
-        template: Current vs Last Year
-
-      - unique_name: Date Month Hierarchy Current vs Previous Pct
-        expression: "(([Date Dimension].[Date Dimension].CurrentMember, [Measures].currentMember)\
-          \ - ([Date Dimension].[Date Dimension].CurrentMember.prevMember, [Measures].currentMember))\
-          \ / ([Date Dimension].[Date Dimension].CurrentMember.prevMember, [Measures].currentMember)"
-        format: Percent
-        hierarchy: Date Dimension
-        template: Current vs Previous Pct
-
-      - unique_name: Date Month Hierarchy Moving Average 5 Period
-        expression: "Avg([Date Dimension].[Date Dimension].CurrentMember.Lag(4):[Date\
-          \ Dimension].[Date Dimension].CurrentMember, [Measures].currentMember)"
-        format: Standard
-        hierarchy: Date Dimension
-        template: Moving Average 5 Period
-
-      - unique_name: Date Month Hierarchy Pct of Total
-        expression: "([Date Dimension].[Date Dimension].CurrentMember, [Measures].currentMember)\
-          \ / ([Date Dimension].[Date Dimension].[All], [Measures].currentMember)"
-        format: Percent
-        hierarchy: Date Dimension
-        template: Pct of Total
-
-modeler_metadata:
-  version: "0"
-  modified: "false"
+        name: Current vs Last Year Pct
+        description: Current vs Last Year Pct

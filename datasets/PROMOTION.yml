@@ -1,7 +1,7 @@
 unique_name: PROMOTION
 object_type: dataset
 label: PROMOTION
-connection_id: BigQuery
+connection_id: wh
 table: promotion
 
 columns:

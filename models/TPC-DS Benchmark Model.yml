@@ -230,6 +230,7 @@ metrics:
     folder: Total Sales Measures
 
   - unique_name: m_WS_WHOLESALE_COST_sum
+    folder: Total Sales Measures
 
   - unique_name: m_WS_WHOLESALE_COST_sum_2
     folder: Total Sales Measures

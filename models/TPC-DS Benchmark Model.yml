@@ -136,7 +136,7 @@ relationships:
 
 metrics:
 
-  - unique_name: m_purchased_amount_in_store
+  - unique_name: Purchased Amount In Store
     folder: Store Sales Measures
 
   - unique_name: m_purchased_amount_on_web
@@ -300,7 +300,7 @@ aggregates:
       - m_ss_quantity_sum
       - m_ss_sales_price_avg
       - m_ss_net_paid_inc_tax_sum
-      - m_purchased_amount_in_store
+      - Purchased Amount In Store
       - m_ss_net_paid_sum
       - m_store_sales_price
       - m_ss_list_price_avg

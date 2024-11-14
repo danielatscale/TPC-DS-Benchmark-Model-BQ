@@ -160,7 +160,7 @@ metrics:
   - unique_name: Store Net Profit
     folder: Store Sales Measures
 
-  - unique_name: m_ss_quantity_sum
+  - unique_name: Store Quantity Sold
     folder: Store Sales Measures
 
   - unique_name: m_ss_sales_price_avg
@@ -297,7 +297,7 @@ aggregates:
 
     metrics:
       - Store Net Profit
-      - m_ss_quantity_sum
+      - Store Quantity Sold
       - m_ss_sales_price_avg
       - Store Net Paid Incl Tax
       - Purchased Amount In Store

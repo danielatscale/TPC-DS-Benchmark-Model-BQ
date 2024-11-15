@@ -184,19 +184,16 @@ metrics:
   - unique_name: Web Customer Count
     folder: Customer Information
 
-  - unique_name: m_ws_ext_discount_amt_sum
+  - unique_name: Ws Ext Discount Amount
     folder: Web Sales Measures
 
-  - unique_name: Ws Ext Discount Amount
-    folder: Total Sales Measures
-
-  - unique_name: m_WS_EXT_LIST_PRICE_sum
+  - unique_name: Ws Ext List Price
     folder: Store Sales Measures
 
-  - unique_name: m_ws_ext_ship_cost_sum
+  - unique_name: Web Ext Ship Cost
     folder: Web Sales Measures
 
-  - unique_name: m_ws_ext_wholesale_cost_sum
+  - unique_name: Web Ext Wholesale Cost
     folder: Web Sales Measures
 
   - unique_name: m_WS_LIST_PRICE_sum
@@ -345,4 +342,4 @@ aggregates:
       - m_ws_quantity_sum
       - m_ws_net_paid_inc_ship_sum
       - Purchased Amount On Web
-      - m_ws_ext_discount_amt_sum
+      - Ws Ext Discount Amount

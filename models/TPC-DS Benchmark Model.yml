@@ -163,10 +163,10 @@ metrics:
   - unique_name: Store Quantity Sold
     folder: Store Sales Measures
 
-  - unique_name: m_ss_sales_price_avg
+  - unique_name: Average Store Sales Sales Price
     folder: Store Sales Measures
 
-  - unique_name: m_store_coupon_amt_sum
+  - unique_name: Store Coupon Amount
     folder: Store Sales Measures
 
   - unique_name: m_store_sales_price
@@ -298,7 +298,7 @@ aggregates:
     metrics:
       - Store Net Profit
       - Store Quantity Sold
-      - m_ss_sales_price_avg
+      - Average Store Sales Sales Price
       - Store Net Paid Incl Tax
       - Purchased Amount In Store
       - Store Net Paid Amount

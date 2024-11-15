@@ -169,19 +169,19 @@ metrics:
   - unique_name: Store Coupon Amount
     folder: Store Sales Measures
 
-  - unique_name: m_store_sales_price
+  - unique_name: Store Sales Price
     folder: Store Sales Measures
 
-  - unique_name: m_web_sales_net_paid
+  - unique_name: Web Sales Net Paid
     folder: Web Sales Measures
 
-  - unique_name: m_web_sales_sum
+  - unique_name: Web Sales
     folder: Web Sales Measures
 
-  - unique_name: m_WS Row Counter_sum
+  - unique_name: Web Sales Row Counter
     folder: Web Sales Measures
 
-  - unique_name: m_WS_BILL_CUSTOMER_SK_count
+  - unique_name: Web Customer Count
     folder: Customer Information
 
   - unique_name: m_ws_ext_discount_amt_sum
@@ -302,7 +302,7 @@ aggregates:
       - Store Net Paid Incl Tax
       - Purchased Amount In Store
       - Store Net Paid Amount
-      - m_store_sales_price
+      - Store Sales Price
       - Average Store Sales List Price
 
   - unique_name: Web Sales
@@ -337,11 +337,11 @@ aggregates:
         dimension: Product Dimension
 
     metrics:
-      - m_web_sales_sum
+      - Web Sales
       - m_ws_net_paid_inc_tax_sum
       - m_ws_net_paid_inc_ship_tax_sum
       - m_ws_net_profit_sum
-      - m_WS Row Counter_sum
+      - Web Sales Row Counter
       - m_ws_quantity_sum
       - m_ws_net_paid_inc_ship_sum
       - Purchased Amount On Web

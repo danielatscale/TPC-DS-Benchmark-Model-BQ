@@ -1,4 +1,4 @@
-unique_name: m_WS_ORDER_NUMBER_sum
+unique_name: Ws Order Number
 object_type: metric
 label: Ws Order Number
 calculation_method: sum

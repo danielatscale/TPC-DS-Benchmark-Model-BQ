@@ -196,40 +196,34 @@ metrics:
   - unique_name: Web Ext Wholesale Cost
     folder: Web Sales Measures
 
-  - unique_name: m_WS_LIST_PRICE_sum
+  - unique_name: Ws List Price
     folder: Store Sales Measures
 
-  - unique_name: m_WS_LIST_PRICE_sum_2
-    folder: Store Sales Measures
-
-  - unique_name: m_ws_net_paid_inc_ship_sum
+  - unique_name: Web Net Paid Incl Ship
     folder: Web Sales Measures
 
-  - unique_name: m_ws_net_paid_inc_ship_tax_sum
+  - unique_name: Web Net Paid Incl Tax and Ship
     folder: Web Sales Measures
 
-  - unique_name: m_ws_net_paid_inc_tax_sum
+  - unique_name: Web Net Paid Incl Tax
     folder: Web Sales Measures
 
-  - unique_name: m_ws_net_paid_sum
+  - unique_name: Web Net Paid Amount
     folder: Web Sales Measures
 
-  - unique_name: m_ws_net_profit_sum
+  - unique_name: Web Net Profit
     folder: Web Sales Measures
 
-  - unique_name: m_WS_ORDER_NUMBER_sum
+  - unique_name: Ws Order Number
     folder: Web Sales Measures
 
-  - unique_name: m_ws_quantity_sum
+  - unique_name: Web Quantity Sold
     folder: Web Sales Measures
 
-  - unique_name: m_WS_SALES_PRICE_sum
+  - unique_name: Ws Sales Price
     folder: Total Sales Measures
 
-  - unique_name: m_WS_WHOLESALE_COST_sum
-    folder: Total Sales Measures
-
-  - unique_name: m_WS_WHOLESALE_COST_sum_2
+  - unique_name: Ws Whole Sale Cost
     folder: Total Sales Measures
 
   - unique_name: Average Web Unit Net Profit
@@ -335,11 +329,11 @@ aggregates:
 
     metrics:
       - Web Sales
-      - m_ws_net_paid_inc_tax_sum
-      - m_ws_net_paid_inc_ship_tax_sum
-      - m_ws_net_profit_sum
+      - Web Net Paid Incl Tax
+      - Web Net Paid Incl Tax and Ship
+      - Web Net Profit
       - Web Sales Row Counter
-      - m_ws_quantity_sum
-      - m_ws_net_paid_inc_ship_sum
+      - Web Quantity Sold
+      - Web Net Paid Incl Ship
       - Purchased Amount On Web
       - Ws Ext Discount Amount

@@ -1,4 +1,4 @@
-unique_name: m_WS_SALES_PRICE_sum
+unique_name: Ws Sales Price
 object_type: metric
 label: Ws Sales Price
 calculation_method: sum

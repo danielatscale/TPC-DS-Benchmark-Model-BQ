@@ -1,6 +1,6 @@
 unique_name: store_sales
 object_type: dataset
-label: store_sales
+label: store_sales_test
 connection_id: wh
 table: store_sales
 
